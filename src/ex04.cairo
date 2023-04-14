@@ -10,7 +10,13 @@
 // What you will learn:
 // - How to use a function to read a value in a mapping where the slot you read is the value from the first call
 ////////////////////////////////
-
+// Solution
+// - call assign_user_slot function
+// - call get_user_slots function to fetch the corresponding value of the user slot
+// - call get_values_mapped function to fetch the value stored at the slot assigned to the user
+// - call claim_points function with expected_value to be value - 32 where the value is the 
+//   output of the previous function call.
+////////////////////////////////
 
 #[contract]
 mod Ex04 {
@@ -51,7 +57,10 @@ mod Ex04 {
     ////////////////////////////////
     #[constructor]
     fn constructor(
-        _tderc20_address: ContractAddress, _players_registry: ContractAddress, _workshop_id: u128, _exercise_id: u128
+        _tderc20_address: ContractAddress,
+        _players_registry: ContractAddress,
+        _workshop_id: u128,
+        _exercise_id: u128
     ) {
         ex_initializer(_tderc20_address, _players_registry, _workshop_id, _exercise_id);
     }

@@ -8,6 +8,9 @@
 // What you'll learn
 // - General smart contract syntax and structure
 ////////////////////////////////
+// Solution
+// - call claim_points function 
+////////////////////////////////
 
 // Contracts are defined using the #[contract] attribute (similar to "contract" in Solidity) and are defined in a module
 #[contract]

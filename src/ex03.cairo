@@ -15,6 +15,11 @@
 // - How to return a value from a function
 // - How to throw an error using the Cairo assert function
 ////////////////////////////////
+// Solution
+// - call increment_counter function two times to increment the counter to 4
+// - call decrement counter function one time to decrement the counter to 3
+// - call claim_points function
+////////////////////////////////
 
 #[contract]
 mod Ex03 {

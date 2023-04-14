@@ -13,7 +13,11 @@
 // - How to create getter functions (indicated with #[view]) to read variables
 // - How to use asserts; they are similar to require() in Solidity
 ////////////////////////////////
-
+// Solution
+// - call my_secret_value function
+// - call claim_points function with my_value equal to the
+//   value of the my_secret_value call value
+////////////////////////////////
 
 #[contract]
 mod Ex02 {

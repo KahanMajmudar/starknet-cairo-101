@@ -5,7 +5,13 @@
 // - Use this contract's claim_points() function
 // - Your points are credited by the contract
 ////////////////////////////////
-
+// Solution
+// - call set_user_values with your account address and array whose 11th pos value is 10
+//   as we need to set slot 10 and idx starts at 0
+// - call get_user_values with your account and slot as 10 to see whether the update 
+//   happened correctly or not
+// - call claim_points function
+////////////////////////////////
 
 #[contract]
 mod Ex08 {

@@ -5,6 +5,9 @@
 // - Use this contract's claim_points() function
 // - Your points are credited by the contract
 ////////////////////////////////
+// Solution
+// - call claim_points function with a >= 40 but <= 70 and b = 0
+////////////////////////////////
 
 #[contract]
 mod Ex07 {

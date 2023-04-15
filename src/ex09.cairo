@@ -6,6 +6,9 @@
 // - Use this contract's claim_points() function
 // - Your points are credited by the contract
 ////////////////////////////////
+// Solution
+// - call claim_points function with array length >= 4 and sum of it's elements >=50
+////////////////////////////////
 
 #[contract]
 mod Ex09 {

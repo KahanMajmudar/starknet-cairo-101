@@ -7,6 +7,13 @@
 // - You need to the exact same thing as the previous exercice
 // - But this time, the external function you will call will call an inner function
 ////////////////////////////////
+// Solution
+// - call assign_user_slot function
+// - call external_handler_for_internal_function function with any value > 0
+// - call get_user_values function to fetch the secret_value from the mapping
+// - call claim_points function with expected_value to be value where the value is the 
+//   output of the previous function call.
+////////////////////////////////
 
 #[contract]
 mod Ex06 {

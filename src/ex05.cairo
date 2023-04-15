@@ -11,6 +11,15 @@
 // What you will learn:
 // - How to interact with private and public variables
 ////////////////////////////////
+// Solution
+// - call assign_user_slot function
+// - call get_user_slots function to fetch the corresponding value of the user slot
+// - call copy_secret_value_to_readable_mapping function to store the secret_value - 23 to the
+//   user_values_public mapping
+// - call get_user_values to fetch the value stored in the mapping on previous function call
+// - call claim_points function with expected_value to be value + 23 - 32 where the value is the 
+//   output of the previous function call.
+////////////////////////////////
 
 #[contract]
 mod Ex05 {
@@ -106,8 +115,6 @@ mod Ex05 {
         }
         user_slots::write(sender_address, next_slot::read() + 1_u128);
         next_slot::write(next_slot::read() + 1_u128);
-
-
     }
 
     #[external]

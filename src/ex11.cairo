@@ -7,6 +7,12 @@
 // - Find the relevant contract it imports from
 // - Read the code and understand what is expected of you
 ////////////////////////////////
+// Solution
+// - call secret_value function to fetch the secret value
+//   (it actually returns the value of secret_value_internal inside ex11_base)
+// - if the value is > max_u128 - 42069, then send secret_value_i_guess = value - 42069, else value + 42069
+// - call claim_points function with the secret value found in the previous step and the next secret value you want to set
+////////////////////////////////
 
 #[contract]
 mod Ex11 {

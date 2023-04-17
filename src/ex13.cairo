@@ -5,6 +5,12 @@
 // In this exercise, you need to:
 // - Use past data from transactions sent to the contract to find a value that is supposed to be "secret"
 // you might need this endpoint https://alpha4.starknet.io/feeder_gateway/get_transaction?transactionHash=
+// Solution
+// - call assign_user_slot function
+// - find the tx on the explorer to fetch the values stored in the contract during initialize
+// - call get_user_slots to find the slot assigned to you
+// - call claim_points function with the value corresponding to the value of the slot found in step 2
+////////////////////////////////
 
 #[contract]
 mod Ex13 {

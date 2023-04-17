@@ -4,6 +4,12 @@
 // - Use a function to get assigned a private variable
 // - Use a function to emit event with the value of the private variable
 // - Your points are credited by the contract
+////////////////////////////////
+// Solution
+// - call assign_user_slot function to emit secret_value + 32
+// - find the tx on the explorer to fetch the value emitted
+// - call claim_points function with the secret_value - 32 found in the previous step
+////////////////////////////////
 
 #[contract]
 mod Ex12 {

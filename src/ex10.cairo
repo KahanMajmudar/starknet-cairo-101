@@ -7,6 +7,12 @@
 // - Call claim_points() in this exercise with the secret value
 // - Your points are credited by the contract
 ////////////////////////////////
+// Solution
+// - call get_ex10b_address function to fetch the contract address of the next contract
+// - call get_secret_value function of the next contract to fetch the secret value
+// - call claim_points function with the secret value found in the previous step and the next
+//   secret value you want to set
+////////////////////////////////
 
 #[contract]
 mod Ex10 {
